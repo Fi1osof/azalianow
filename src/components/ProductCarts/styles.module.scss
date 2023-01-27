@@ -1,0 +1,23 @@
+
+// breakpoints
+$sm: 600;
+$md: 768;
+$lg: 1360;
+
+.productCarts {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  
+  @media screen and (min-width: '#{$sm}px'){
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media screen and (min-width: '#{$md}px'){
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  @media screen and (min-width: '#{$lg}px'){
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+}

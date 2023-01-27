@@ -1,0 +1,15 @@
+**/node_modules/*
+**/out/*
+**/.next/*
+**/dist/*
+**/coverage/*
+**/.storybook/*
+**/storybook-static/*
+/.vscode
+/packages
+/public
+/shared
+generated
+
+# cypress
+/cypress

@@ -1,0 +1,19 @@
+.productCart {
+  border: 1px solid #ddd;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+
+  :global .image {
+    flex: 1;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  :global .content {
+    padding: 15px;
+  }
+
+}
