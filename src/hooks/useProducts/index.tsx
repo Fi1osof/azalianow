@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { useEffect, useState } from 'react'
 import { Product } from '../../interfaces'
 
@@ -11,8 +10,6 @@ export const useProducts = () => {
     fetch('https://fakestoreapi.com/products')
       .then((res) => res.json())
       .then((json: Product[] | null) => {
-        console.log('json', json)
-
         if (Array.isArray(json)) {
           const products = json.map((n) => {
             return {

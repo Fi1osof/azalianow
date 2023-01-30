@@ -1,9 +1,7 @@
-/* eslint-disable no-console */
+import Image from 'next/image'
 import { Product } from '../../../interfaces'
 import { PriceFormat } from '../../formats/PriceFormat'
 import classes from './styles.module.scss'
-
-console.log('classes', classes)
 
 export type ProductCartProps = {
   product: Product
@@ -13,7 +11,12 @@ export const ProductCart: React.FC<ProductCartProps> = ({ product }) => {
   return (
     <div className={classes.productCart}>
       <div className="image">
-        <img src={product.image} />
+        <Image 
+          src={product.image}
+          alt={product.title}
+          width={300}
+          height={225}
+        />
       </div>
 
       <div className="content">

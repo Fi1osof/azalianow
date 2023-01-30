@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { useProducts } from '../hooks/useProducts'
 
 import type { AppProps } from 'next/app'
@@ -7,8 +6,6 @@ import { useMemo } from 'react'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const products = useProducts()
-
-  console.log('products', products)
 
   const context = useMemo<AppContextValue>(() => {
     return {

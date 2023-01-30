@@ -1,8 +1,5 @@
-/* eslint-disable no-console */
 import { ProductCart, ProductCartProps } from './ProductCart'
 import classes from './styles.module.scss'
-
-console.log('classes', classes);
 
 type ProductCartsProps = {
   products: ProductCartProps['product'][]
